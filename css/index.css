@@ -2,6 +2,9 @@ body
 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+p{    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Offside', cursive;}
+
 header
 {
     position: relative;
@@ -94,7 +97,6 @@ header .carousel-item img
     bottom: 0;
     background: rgba(255, 255, 255, 0.92);
 }
-}
 
 .about-caption h2
 {
@@ -124,7 +126,7 @@ header .carousel-item img
     left: calc(50% - 60px);
 }
 .crad{
-    line-height: 20px;
+    line-height: 30px;
 }
 
 .icon
@@ -202,6 +204,7 @@ header .carousel-item img
    
     
 }
+
 #FACTS::before
 {
     content: "";
@@ -212,7 +215,6 @@ header .carousel-item img
     bottom: 0;
     background: rgba(255, 255, 255, 0.92);
 }
-
 .progress-bar-1
 {
  width: 100%;
@@ -248,6 +250,7 @@ header .carousel-item img
     to{width: 90%;}
 }
 @keyframes progress-bar-3
+{
     from{width: 0px;}
     to{width: 75%;}
 }
@@ -468,6 +471,9 @@ footer h1::before
     border-bottom: 1px solid #666666;
 
 }
+.footer-info li i{
+    font-size: 14px;
+}
 .footer-info  a
 {
     text-decoration: none;
@@ -477,16 +483,18 @@ footer h1::before
 }
  .social-links a
 {
-    color: white;
-    padding:7px 10px;
-    background-color: #666666;
+    color: #18d24e;
+    margin:5px;
+    background-color: #242323;
     border-radius: 50%;
+    font-size: 12px;
+    padding:8px 10px;
 
 }
 
 form .inp-1
 {
-    width: 63%;
+    width: 60%;
     padding: 4px 8px;
 }
 
@@ -499,6 +507,7 @@ form .inp-2
     text-align: center;
     color: #fff;
    margin-left: -5px;
+   border-radius: 15%;
     cursor: pointer
 }
 .bg-black
@@ -512,7 +521,7 @@ form .inp-2
 #up
 {
     position: fixed;
-    top:80%;
+    top:90%;
     right: 30px;
     width: 40px;
     height: 40px;
@@ -527,7 +536,7 @@ form .inp-2
 #down
 {
     position: fixed;
-    top:80%;
+    top:90%;
     left: 30px;
     width: 40px;
     height: 40px;
