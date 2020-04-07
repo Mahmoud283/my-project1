@@ -140,7 +140,7 @@ $("#down").click(function(){
 },3000)
 })
 
-$("#loading").fadeOut(2000,function(){
+$("#loading").fadeOut(4000,function(){
 	$("body").css("overflow","auto")
 })
  });
