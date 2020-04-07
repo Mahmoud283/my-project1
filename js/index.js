@@ -1,4 +1,5 @@
 
+ $(document).ready(function(){
 // start counter
 (function ($) {
 	$.fn.countTo = function (options) {
@@ -138,3 +139,8 @@ $("#down").click(function(){
 	$("body,html").animate({scrollTop:$("#contact").offset().top
 },3000)
 })
+
+$("#loading").fadeOut(2000,function(){
+	$("body").css("overflow","auto")
+})
+ });
