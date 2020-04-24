@@ -101,16 +101,28 @@ jQuery(function ($) {
 });
 // end counter
 // nav icon
+let h=$(".navbar").innerHeight();
+$('body','html').css('paddingTop',h)
 $(" nav a").click(function(){
 
 	let aherf=$(this).attr("href")
-	$("body ,html").animate({scrollTop:$(aherf).offset().top},2000)
+	$(" nav a").removeClass("active")
+	$(this).addClass("active")
+	$("body ,html").animate({scrollTop:$(aherf).offset().top-h},2000)
 })
-
 // background change and fade the up and down button
 $(window).scroll(function(){
 	let fristbackground=$(".intro-cont h1").offset().top
+	$("section").each(function(){
+if($(window).scrollTop()>$(this).offset().top-h-1)
+  {
+	  let section_id=$(this).attr("id");
+	  $(" nav a").removeClass("active")
 
+	  $('.navbar-nav li a[href="#'+section_id+'"]').addClass("active")
+	  
+  }
+	})
 if($(window).scrollTop()>fristbackground)
 {
 	$("nav").removeClass(" bg-transparent")

@@ -84,6 +84,12 @@ header
     font-weight: 900;
     font-size: 20px;
 }
+
+.navbar .active{
+    color: #18d24e !important;
+    font-weight: 900;
+    font-size: 20px;
+}
 .nav-item 
 {
     padding: 10px;
