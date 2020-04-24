@@ -189,6 +189,8 @@ header .carousel-item img
     top: 79px;
     left: calc(50% - 60px);
 }
+
+
 .crad{
     line-height: 30px;
 }
@@ -299,7 +301,7 @@ header .carousel-item img
 }
 .progress-bar-4
 {
- width: 55%;
+ width: 65%;
  animation-name: progress-bar-4;
  animation-duration: 5s;
 }
@@ -350,7 +352,13 @@ header .carousel-item img
 background-color: #f7f7f7;
 
 }
-
+#profile.nav{
+    flex-wrap: nowrap;
+}
+.tab-ul
+{
+    display:contents;
+}
 .tab-ul .nav-item
 {
     padding: 20px;
@@ -612,4 +620,39 @@ form .inp-2
 }
 #up,#down i{
     font-size: 40px;
+}
+@media (max-width:600px)
+{
+    .tab-ul .nav-item
+{
+    padding: 10px;
+}
+    .about-caption h2
+    {
+        font-size: 25px;
+        font-weight: 900;
+    }
+    .about-caption h2::after
+{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #18d26e;
+    top: 61px;
+    left: calc(53% - 33px);
+}
+.about-caption h2::before
+{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    top: 62px;
+    left: calc(50% - 60px);
+}
+  
 }
