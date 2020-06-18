@@ -102,7 +102,6 @@ jQuery(function ($) {
 // end counter
 // nav icon
 let h=$(".navbar").innerHeight();
-$('body','html').css('paddingTop',h)
 $(" nav a").click(function(){
 
 	let aherf=$(this).attr("href")
@@ -125,7 +124,7 @@ if($(window).scrollTop()>$(this).offset().top-h-1)
 	})
 if($(window).scrollTop()>fristbackground)
 {
-	$("nav").removeClass(" bg-transparent")
+	$("nav").removeClass("bg-transparent")
 		$("nav").addClass("bg-dark")
 		$("#up").fadeIn(2000);
 		$("#down").fadeIn(2000);
@@ -135,8 +134,9 @@ if($(window).scrollTop()>fristbackground)
 else
 {
 
-	$("nav").addClass(" bg-transparent")
 		$("nav").removeClass("bg-dark")
+		$("nav").addClass("bg-transparent")
+
 		$("#up").fadeOut(2000);
 		$("#down").fadeOut(2000);
 }
